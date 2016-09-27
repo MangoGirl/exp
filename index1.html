@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.figcaption {
+		    background: #EEE;
+		    width: 410px;
+		    max-height: 3em;
+		    margin: 1em;
+		}
+		.figcaption2{
+			width:200px;
+			font-size:12px;
+			}
+		.figcaption p {
+		    margin: 0;
+		    line-height: 1.5em;
+		}
+
+	</style>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<div class="figcaption figcaption2"><p>邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉</p></div>
+    
+<div class="figcaption"><p>固定一个喜欢的网站可不可以？当然！把每天常去的网站统统固定到开始屏幕中。如何固定？打开 IE10，在网页空白处点击鼠标右键，在应用栏中点击“图钉”图标即可完成固定。邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉 邓超 孙俪 代乐乐 俞白眉<</p></div>
+
+<div class="figcaption"><p>作为微软的游戏平台，Xbox</p></div>
+    
+<div class="figcaption figcaption2"><p>固定一个喜欢的网站可不可以？</p></div>
+<script type="text/javascript">
+	$(function(){
+		$(".figcaption").each(function(i){
+	    var divH = $(this).height();
+	    var $p = $("p", $(this)).eq(0);
+	    while ($p.outerHeight() > divH) {
+	        $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
+	    };
+	})
+});
+</script>
+</body>
+</html>
